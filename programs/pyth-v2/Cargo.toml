@@ -1,0 +1,20 @@
+[package]
+name = "pyth-v2"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "pyth_v2"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.25.0"
+pyth-sdk-solana = { version = "0.6.1"}

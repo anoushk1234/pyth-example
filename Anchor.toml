@@ -1,0 +1,15 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.devnet]
+pyth_v1 = "37ETWfZQrpGUWrKrsf28qPvPdqqwr3iqDqT12fZw1Qk3"
+pyth_v2="8ZKHmrEvmrC6DskTRyk2sD8FkWrQs8Uv6NgiiJv8WosL"
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
